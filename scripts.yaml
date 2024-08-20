@@ -1,0 +1,17 @@
+template:
+  init:
+    (description): arquivos iniciais
+    (scripts):
+    - mkdir lib\app\shared\themes\
+    - mkdir lib\app\shared\widgets\
+    - mkdir lib\app\shared\models\
+    - mkdir lib\app\pages\
+    - mkdir lib\app\services\
+    - curl -o lib/app/shared/themes/appcolors.dart https://raw.githubusercontent.com/devmatheusoliveira/nlw_together/main/lib/shared/themes/appcolors.dart
+    - curl -o lib/app/shared/themes/app_images.dart https://raw.githubusercontent.com/devmatheusoliveira/nlw_together/main/lib/shared/themes/app_images.dart
+  assets:
+    - mkdir assets\images
+    - mkdir assets\lotties
+  # services: 
+  #   api:
+  #     -
