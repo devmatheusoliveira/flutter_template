@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:projeto_template/app/pages/home/home_controller.dart';
+import 'package:projeto_template/app/pages/home/example_controller.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class ExamplePage extends StatefulWidget {
+  const ExamplePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ExamplePage> createState() => _ExamplePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ExamplePageState extends State<ExamplePage> {
   HomeController controller = HomeController();
   @override
   Widget build(BuildContext context) {

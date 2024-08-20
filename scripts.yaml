@@ -9,6 +9,12 @@ template:
     - mkdir lib\app\services\
     - curl -o lib/app/shared/themes/appcolors.dart https://raw.githubusercontent.com/devmatheusoliveira/nlw_together/main/lib/shared/themes/appcolors.dart
     - curl -o lib/app/shared/themes/app_images.dart https://raw.githubusercontent.com/devmatheusoliveira/nlw_together/main/lib/shared/themes/app_images.dart
+    - curl -o lib/navigation.dart https://raw.githubusercontent.com/devmatheusoliveira/flutter_template/main/lib/navigation.dart
+    - curl -o lib/app/pages/home/home_page.dart https://raw.githubusercontent.com/devmatheusoliveira/flutter_template/main/lib/app/pages/home/home_page.dart
+    - curl -o lib/app/pages/home/home_controller.dart https://raw.githubusercontent.com/devmatheusoliveira/flutter_template/main/lib/app/pages/home/home_controller.dart
+    - flutter pub run build_runner build --delete-conflicting-outputs
+    - flutter clean
+    - flutter pub get
   assets:
     - mkdir assets\images
     - mkdir assets\lotties
